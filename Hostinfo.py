@@ -1,4 +1,4 @@
- Display hostname andIP address
+# Display hostname andIP address
 import socket
 def host_IP():
    try:
