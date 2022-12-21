@@ -1,12 +1,15 @@
-# Display hostname andIP address
+# Importing socket library
 import socket
-def host_IP():
-   try:
-      hname = socket.gethostname()
-      hip = socket.gethostbyname(hname)
-      print("Hostname:  ",hname)
-      print("IP Address: ",hip)
-   except:
-      print("Unable to get Hostname and IP")
-# Driver code
-host_IP() #Function call
+
+# Function to display hostname and IP address
+def get_Host_name_IP():
+	try:
+		host_name = socket.gethostname()
+		host_ip = socket.gethostbyname(host_name)
+		print("Hostname : ", host_name)
+		print("IP : ", host_ip)
+	except:
+		print("Unable to get Hostname and IP")
+
+# Function call
+get_Host_name_IP()
